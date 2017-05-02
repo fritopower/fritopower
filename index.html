@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>My Online Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id="navHomeTab" class="active"><a href="#" onclick="goToHome()"><i class="fa fa-home"></i>Home</a></li>
+                  <li id="navSkillsTab"><a href="#" onclick="goToSkills()"><i class="fa fa-bolt"></i>Skills</a></li>
+                  <li id="navContactTab"><a href="#" onclick="goToContact()"><i class="fa fa-phone"></i>Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="home">
+            <h1 class="cover-heading">My name is Lye Jun!</h1>
+            <p class="lead">This is my online resume. I like to solve Rubik's Cube in the blindfold way and perhaps irregular cubes!</p>
+            <p class="lead">
+              <a href="https://goo.gl/kIyVDL" class="btn btn-lg btn-default">Click to see my ranking in Skewb!</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="skills">
+            <h1 class="cover-heading">Rubik's Skills</h1>
+            <p class="lead">2x2x2 Rubik's Cube Blindfold</p>
+            <p class="lead">3x3x3 Rubik's Cube Blindfold</p>
+            <p class="lead">2x2x2 Rubik's Cube </p>
+            <p class="lead">3x3x3 Rubik's Cube </p>
+            <p class="lead">Skewb </p>
+            <p class="lead">Pyraminx </p>
+            <p class="lead">
+              <a href="https://goo.gl/kIyVDL" class="btn btn-lg btn-default">Click to see my ranking in Skewb!</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="contact">
+            <h1 class="cover-heading">Social Contacts</h1>
+            <p class="lead">Feel free to contact me via these channels!</p>
+            <p class="lead">BIGO Live @PikPakPiak</p>
+            <p class="lead">Twitter @PikPakPiak</p>
+            <p class="lead">Telegram @fritopower</p>
+            <p class="lead">SnapChat @fritopower</p>
+            <p class="lead">Instagram @26th_march</p>
+            <p class="lead">BeLive @purplepanda</p>
+
+            <p class="lead">
+              <a href="https://goo.gl/kIyVDL" class="btn btn-lg btn-default">Click to see my ranking in Skewb!</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+      <script>
+      // run whatever is inside this function
+      // when the page loads
+      $(function(){
+        $("#skills").hide();
+        $("#contact").hide();
+      })
+
+      function goToHome(){
+        $("#skills").hide();
+        $("#contact").hide();
+        $("#home").slideDown();
+        $("#navHomeTab").attr('class', 'active');
+        $("#navSkillsTab").attr('class', );
+        $("#navContactTab").attr('class', ' ');
+      }
+
+      function goToSkills(){
+        $("#home").hide();
+        $("#contact").hide();
+        $("#skills").slideDown();
+        $("#navHomeTab").attr('class', ' ');
+        $("#navSkillsTab").attr('class', 'active');
+        $("#navContactTab").attr('class', ' ');
+      }
+
+      function goToContact(){
+        $("#home").hide();
+        $("#skills").hide();
+        $("#contact").slideDown();
+        $("#navHomeTab").attr('class', ' ');
+        $("#navSkillsTab").attr('class', '');
+        $("#navContactTab").attr('class', 'active');
+      }
+
+      </script>
+
+  </body>
+</html>
